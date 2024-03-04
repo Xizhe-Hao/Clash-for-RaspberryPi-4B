@@ -70,9 +70,31 @@ export http_proxy="http://127.0.0.1:7890"
 export https_proxy="http://127.0.0.1:7890"
 export all_proxy="socks5://127.0.0.1:7891"
 ```
-使配置生效
+使环境指令生效
 ```
 source .bashrc
 ```
-
-
+重启树莓派，使配置生效。
+```
+sudo reboot
+```
+# 4 测试
+重新开机后输入clash启动指令，在~/.config/clash目录下查找其配置文件
+```
+clash -d ~/.config/clash
+```
+如果返回类似下方内容证明成功启动
+```
+INFO[0000] Start initial compatible provider 💬chatGPT   
+INFO[0000] Start initial compatible provider 🎬Netflix   
+INFO[0000] Start initial compatible provider 🎵Spotify   
+INFO[0000] Start initial compatible provider 🎬Youtube   
+INFO[0000] Start initial compatible provider 🔰国外流量      
+INFO[0000] Start initial compatible provider ⚓️其他流量     
+INFO[0000] Start initial compatible provider ✈️Telegram 
+INFO[0000] Start initial compatible provider 🎬国外媒体      
+INFO[0000] Start initial compatible provider 🎬哔哩哔哩      
+INFO[0000] Start initial compatible provider 🍎苹果服务      
+INFO[0000] Start initial compatible provider 🎬Disney+   
+INFO[0000] Start initial compatible provider 🚀直接连接
+```
