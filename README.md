@@ -22,7 +22,7 @@ uname -m
 
 其他版本可通过[此链接](https://github.com/frainzy1477/clash_dev/releases)获取
 ![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/dd28b846-44aa-4ca7-8951-b79aee49bae4)
-下载指令（以64位系统为例）  
+下载指令（以64位系统为例） 
 ```
 wget https://github.com/frainzy1477/clash_dev/releases/download/v1.1.0/clash-linux-armv8.gz
 ```
@@ -30,11 +30,12 @@ wget https://github.com/frainzy1477/clash_dev/releases/download/v1.1.0/clash-lin
 ```
 gunzip clash-linux-armv8.gz   
 ```
-'''
+将解压好的clashclash-linux-armv8文件更名为clash，移动到/usr/local/bin文件夹下，同时给予执行权限
+```
 mv clash-linux-armv8 clash
 sudo mv clash /usr/local/bin
 sudo chmod a+x /usr/local/bin/clash
-'''
+```
 # 2 配置clash
 ## 2.1 下载clash配置文件
 ```
@@ -49,10 +50,30 @@ wget -O config.yaml [订阅链接]
 wget -O Country.mmdb "https://raw.githubusercontent.com/SukkaW/Koolshare-Clash/master/koolclash/koolclash/config/Country.mmdb"
 ```
 ## 2.3 放置配置文件
-将最开始下好的clashclash-linux-armv8文件更名为clash，移动到/usr/local/bin文件夹下，同时给予执行权限
-
 在.config文件夹下新建clash文件夹
-将解压后的文件放置在.config/clash文件夹下面
-
+```
+cd .config
+mkdir clash
+```
+将上述配置文件放置在.config/clash文件夹下面
+```
+mv config.yaml Country.mmdb clash/
+```
+# 3. 环境配置
+回到主目录，通过对bashrc中文件进行修改来配置clash环境
+```
+cd
+sudo nano .bashrc
+```
+在打开的bashrc文件最下方添加环境配置指令
+```
+export http_proxy="http://127.0.0.1:7890"
+export https_proxy="http://127.0.0.1:7890"
+export all_proxy="socks5://127.0.0.1:7891"
+```
+使配置生效
+```
+source .bashrc
+```
 
 
