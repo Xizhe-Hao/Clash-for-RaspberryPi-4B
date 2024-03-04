@@ -79,6 +79,7 @@ source .bashrc
 sudo reboot
 ```
 # 4 测试
+## 4.1 启动clash   
 重新开机后输入clash启动指令，在~/.config/clash目录下查找其配置文件
 ```
 clash -d ~/.config/clash
@@ -99,7 +100,8 @@ INFO[0000] Start initial compatible provider 🎬Disney+
 INFO[0000] Start initial compatible provider 🚀直接连接
 ```
 **注意：此时服务是一次性的,重新打开一个终端，不要关闭当前终端** 
-          
+
+## 4.2 与google建立连接（新开一个终端）
 运行测试命令，尝试和google网页建立连接
 ```
 curl www.google.com
