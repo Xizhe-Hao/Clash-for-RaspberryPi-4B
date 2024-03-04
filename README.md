@@ -12,7 +12,7 @@
 ## 1.2 下载clash
 首先需要了解清楚自己树莓派的操作系统位数。在树莓派命令行中输入```uname -m```，根据不同的返回值判断系统位数和所需clash版本，如下表所示。
 |返回值| 操作系统位数 | 所需下载的clash版本  |
-| :---：|    :----:   |     ：---: |
+| :---：    |    :---:   |     ：---: |
 | armv7l      | 32位       | [clash-linux-armv7.gz](https://github.com/frainzy1477/clash_dev/releases/download/v1.1.0/clash-linux-armv7.gz)   |
 | aarch64 或 armv8  | 64位    | [clash-linux-armv8.gz ](https://github.com/frainzy1477/clash_dev/releases/download/v1.1.0/clash-linux-armv8.gz)  |
 其他版本可通过[此链接](https://github.com/frainzy1477/clash_dev/releases)获取
