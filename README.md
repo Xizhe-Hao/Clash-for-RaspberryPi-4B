@@ -44,8 +44,7 @@ wget -O config.yaml [订阅链接]
 订阅链接请从魔法后台寻找
 ![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/c6209992-8ddd-42f3-b287-718d4e9604d9)
 ## 2.2 下载clash全球IP库
-> Clash配置需要下载Country.mmdb 文件，Country.mmdb 是全球 IP 库，可以实现各个国家的IP信息解析和地理定位，没有这个文件clash 无法正常启动
-下载指令
+Clash配置需要下载Country.mmdb 文件，Country.mmdb 是全球 IP 库，可以实现各个国家的IP信息解析和地理定位，没有这个文件clash无法正常启动下载指令
 ```
 wget -O Country.mmdb "https://raw.githubusercontent.com/SukkaW/Koolshare-Clash/master/koolclash/koolclash/config/Country.mmdb"
 ```
