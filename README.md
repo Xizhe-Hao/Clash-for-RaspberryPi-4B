@@ -22,4 +22,11 @@ uname -m
 
 其他版本可通过[此链接](https://github.com/frainzy1477/clash_dev/releases)获取
 ![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/dd28b846-44aa-4ca7-8951-b79aee49bae4)
+下载后解压指令（以64位系统为例）
+```
+wget https://github.com/frainzy1477/clash_dev/releases/download/v1.1.0/clash-linux-armv8.gz
+gunzip clash-linux-armv8.gz   
+```
+
+
 
