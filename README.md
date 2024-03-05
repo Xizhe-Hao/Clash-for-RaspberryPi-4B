@@ -27,11 +27,11 @@ uname -m
 wget https://github.com/frainzy1477/clash_dev/releases/download/v1.1.0/clash-linux-armv8.gz
 ```
 解压下载文件  
-```
+```Bash
 gunzip clash-linux-armv8.gz   
 ```
 将解压好的clashclash-linux-armv8文件更名为clash，移动到/usr/local/bin文件夹下，同时给予执行权限
-```
+```Bash
 mv clash-linux-armv8 clash
 sudo mv clash /usr/local/bin
 sudo chmod a+x /usr/local/bin/clash
