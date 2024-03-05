@@ -11,7 +11,7 @@
 之前在windows和Android设备都有使用过clash，感觉很流畅。其跨平台兼容性、用户友好的图形界面、灵活的配置选项都做得很好，并且支持多种代理协议，如Shadowsocks、Vmess等，可以能够根据规则智能地分流网络请求，优化网络访问速度和稳定性。此外，它还支持自动代理和直连规则，可以根据需要自定义，满足各类特定需求。
 ## 1.2 下载clash
 首先需要了解清楚自己树莓派的操作系统位数。在树莓派命令行中输入
-```bash
+```Bash
 uname -m
 ```
 根据不同的返回值判断系统位数和所需clash版本，如下表所示。
@@ -23,7 +23,7 @@ uname -m
 其他版本可通过[此链接](https://github.com/frainzy1477/clash_dev/releases)获取
 ![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/dd28b846-44aa-4ca7-8951-b79aee49bae4)
 下载指令（以64位系统为例） 
-```
+```Bash
 wget https://github.com/frainzy1477/clash_dev/releases/download/v1.1.0/clash-linux-armv8.gz
 ```
 解压下载文件  
