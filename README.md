@@ -132,11 +132,11 @@ chromium-browser --proxy-server="http://127.0.0.1:7890"
 输入以下命令打开 crontab：   
 '''
 crontab -e
-''' 
+'''
 在末尾添加自启动指令   
 '''
 @reboot /usr/local/bin/clash
-'''            
+'''        
 保存后退出即可。  
 # 参考资料：
 感谢前人的引领，也希望本篇教程能帮助到更多人~   
