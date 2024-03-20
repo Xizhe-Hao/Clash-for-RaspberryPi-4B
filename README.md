@@ -129,22 +129,22 @@ chromium-browser --proxy-server="http://127.0.0.1:7890"
 ![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/c641e302-b185-44ec-8982-15e8a014fa64)
 # 6 Clash开机自启动
 我们可以使用 crontab 作为自动任务管理器，将clash启动作为系统默认任务。
-输入以下命令打开 crontab：
+输入以下命令打开 crontab：   
 '''
 crontab -e
 ''' 
-在末尾添加自启动指令
+在末尾添加自启动指令   
 '''
 @reboot /usr/local/bin/clash
-'''
+'''            
 保存后退出即可。  
 # 参考资料：
-感谢前人的引领，也希望本篇教程能帮助到更多人~
+感谢前人的引领，也希望本篇教程能帮助到更多人~   
 1. https://parrotsec-cn.org/t/linux-clash-dashboard/5169  
 2. https://mraddict.top/posts/clash-on-rpi/index.html  
 3. http://www.okey56.com/post/28.html  
 4. https://github.com/ghostxu97/clash-for-linux?tab=readme-ov-file  
 5. https://github.com/haishanh/yacd/issues/505  
 
-至此，大功告成，给自己点个赞吧~
+至此，大功告成，给自己点个赞吧:)  
 ——End——
