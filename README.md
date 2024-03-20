@@ -1,4 +1,4 @@
-# 树莓派4B_linux clash部署教程（2024.3.4）
+![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/8175f0dc-2403-460a-b816-40084df0f46f)# 树莓派4B_linux clash部署教程（2024.3.4）
 
 > 写在前面：由于clash去年已经删库跑路，加上网上对于这部分部署教程并不太多，前期个人也踩了很多坑，希望这篇对大家有帮助，enjoy~
 # 0 使用情况介绍
@@ -114,4 +114,16 @@ curl www.google.com
 ```
 即证明和google连接成功
 ## 4.3  网页测试
-此时我们在浏览器中输入www.google.com发现仍然长时间无法响应无法打开，这是因为我们没有配置
+此时我们在浏览器中输入www.google.com发现仍然长时间无法响应无法打开，需要指定浏览器的代理。此时，关闭所有已打开的网页，在命令行中输入
+'''
+chromium-browser --proxy-server="http://127.0.0.1:7890"
+'''
+即可自动打开浏览器，并且访问google没有问题,如图：  
+![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/5d542f83-1dc9-41bb-97fa-d22bb296a500)
+# 5. Dashboard选择节点
+在刚才打开的浏览器中输入Dashboard网址（以Yacd为例）：yacd.haishan.me  
+打开如图勾选“自动断连旧链接”  
+![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/3c9e7de4-84a8-4ebe-b2e7-9d5d450924bf)
+此时，便可以在proxies里面自由选择节点了
+![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/c641e302-b185-44ec-8982-15e8a014fa64)
+
