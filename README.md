@@ -116,28 +116,31 @@ curl www.google.com
 ## 4.3  网页测试
 此时我们在浏览器中输入www.google.com发现仍然长时间无法响应无法打开，需要指定浏览器的代理。    
 此时，**关闭所有已打开的网页**，在命令行中输入
-'''
+```
 chromium-browser --proxy-server="http://127.0.0.1:7890"
-'''
+```
 即可自动打开浏览器，并且访问google没有问题,如图：  
 ![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/5d542f83-1dc9-41bb-97fa-d22bb296a500)
 # 5. Dashboard选择节点
 在刚才打开的浏览器中输入Dashboard网址（以Yacd为例）：yacd.haishan.me  
 打开如图勾选“自动断连旧链接”  
-![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/3c9e7de4-84a8-4ebe-b2e7-9d5d450924bf)
+![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/3c9e7de4-84a8-4ebe-b2e7-9d5d450924bf)  
 此时，便可以在proxies里面自由选择节点了
-![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/c641e302-b185-44ec-8982-15e8a014fa64)
+![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/c641e302-b185-44ec-8982-15e8a014fa64)  
 # 6 Clash开机自启动
 我们可以使用 crontab 作为自动任务管理器，将clash启动作为系统默认任务。
 输入以下命令打开 crontab：   
-'''
+```
 crontab -e
-'''
-在末尾添加自启动指令   
-'''
+```
+
+在末尾添加自启动指令：
+
+```
 @reboot /usr/local/bin/clash
-'''        
+```     
 保存后退出即可。  
+
 # 参考资料：
 感谢前人的引领，也希望本篇教程能帮助到更多人~   
 1. https://parrotsec-cn.org/t/linux-clash-dashboard/5169  
@@ -145,6 +148,9 @@ crontab -e
 3. http://www.okey56.com/post/28.html  
 4. https://github.com/ghostxu97/clash-for-linux?tab=readme-ov-file  
 5. https://github.com/haishanh/yacd/issues/505  
-
-至此，大功告成，给自己点个赞吧:)  
+  
+  
+  
+至此，大功告成，给自己点个赞吧:)    
+   
 ——End——
