@@ -1,4 +1,4 @@
-![image](https://github.com/Xizhe-Hao/RaspberryPi-4B-clash-2024.3/assets/154408355/8175f0dc-2403-460a-b816-40084df0f46f)# 树莓派4B_linux clash部署教程（2024.3.4）
+# 树莓派4B_linux clash部署教程（2024.3.4）
 
 > 写在前面：由于clash去年已经删库跑路，加上网上对于这部分部署教程并不太多，前期个人也踩了很多坑，希望这篇对大家有帮助，enjoy~
 # 0 使用情况介绍
